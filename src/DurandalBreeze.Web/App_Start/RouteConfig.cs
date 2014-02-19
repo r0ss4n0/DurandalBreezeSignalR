@@ -15,7 +15,8 @@ namespace DurandalBreeze
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             
             // Register the default hubs route: ~/signalr
-            routes.MapHubs();
+            // No longer needed in SignalR 2.*
+            // routes.MapHubs();
 
             routes.MapHttpRoute(
                 "apiRoute",
